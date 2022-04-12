@@ -1,0 +1,79 @@
+html {
+    font-family: Nunito, sans-serif;
+}
+
+h2 {
+    color: rgba(117, 104, 246, 1);
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: Nunito, sans-serif;
+    font-size: 42px;
+    opacity: 1;
+    text-align: left;
+    margin-bottom: 3.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.flower-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/flower.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.padded-container {
+    padding: 5.75rem 4.313rem 5.75rem 4.313rem;
+}
+
+.purple {
+    color: #7568f6;
+}
+
+.btn-purple {
+    width: 100%;
+    color: #fff;
+    border-color: #7158E2;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    padding: 8px 0 8px 0;
+}
+
+.btn-purple:hover {
+    color: #fff;
+    background-color: rgba(113, 88, 226, 0.08);
+    border-color: #8c68f6;
+}
+
+.btn-purple:focus, .btn-purple.focus {
+    box-shadow: 0 0 0 0.1rem rgba(117, 104, 246, 0.62);
+}
+
+.btn-purple.disabled, .btn-purple:disabled {
+    color: #fff;
+    background-color: #7568f6;
+    border-color: #8c68f6;
+}
+
+.btn-purple:not(:disabled):not(.disabled):active, .btn-purple:not(:disabled):not(.disabled).active,
+.show > .btn-purple.dropdown-toggle {
+    color: #fff;
+    background-color: rgba(128, 103, 238, 0.3);
+    border-color: #8c68f6;
+}
+
+.btn-purple-text {
+    color: #7158E2;
+    font-weight: 400;
+}
