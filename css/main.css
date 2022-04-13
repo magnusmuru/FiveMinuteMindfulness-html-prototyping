@@ -1,5 +1,12 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
 html {
     font-family: Nunito, sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 100%;
 }
 
 h2 {
@@ -76,4 +83,43 @@ p {
 .btn-purple-text {
     color: #7158E2;
     font-weight: 400;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 126px;
+    border-right:  1px solid rgba(118, 117, 131, 0.58);
+    background-color: #F8F8F8;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-entry {
+    width: 126px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.text-roboto {
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+}
+
+.sidebar-icon {
+    font-size: 24px;
+}
+
+.text-purple {
+    color: #7568F6;
+}
+
+.text-grey {
+    color: #767583;
 }
