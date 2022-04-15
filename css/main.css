@@ -104,6 +104,20 @@ p {
     font-size: 1rem;
     margin-bottom: 15px;
     margin-top: 15px;
+    color: #767583;
+}
+
+.sidebar-active {
+    width: 126px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #7568F6;
 }
 
 .text-roboto {
@@ -113,12 +127,4 @@ p {
 
 .sidebar-icon {
     font-size: 24px;
-}
-
-.text-purple {
-    color: #7568F6;
-}
-
-.text-grey {
-    color: #767583;
 }
