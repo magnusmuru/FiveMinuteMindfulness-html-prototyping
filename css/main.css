@@ -55,6 +55,10 @@ p {
     font-weight: 500;
 }
 
+.scroll {
+    overflow-y: scroll;
+}
+
 .page-image {
     width: 100%;
     height: 100vh;
