@@ -276,3 +276,23 @@ p {
 .cursor-pointer {
     cursor: pointer;
 }
+
+.vector-top {
+
+    position: absolute;
+    left: 69.6%;
+    right: 0;
+    top: 5%;
+    bottom: 52.15%;
+    z-index: -1;
+}
+
+.vector-bottom {
+    z-index: -1;
+    position: absolute;
+    left: 18%;
+    right: 73.65%;
+    top: 45%;
+    bottom: 12.46%;
+
+}
