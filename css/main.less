@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 h2 {
-  color: #7568f6;
+  color: rgba(117, 104, 246, 1);
   position: relative;
   top: 0;
   left: 0;
@@ -85,29 +85,33 @@ p {
   border-radius: 1rem;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   padding: 8px 0 8px 0;
-}
-.btn-purple:hover {
-  color: #fff;
-  background-color: rgba(113, 88, 226, 0.08);
-  border-color: #8c68f6;
-}
-.btn-purple:focus {
-  box-shadow: 0 0 0 0.1rem rgba(117, 104, 246, 0.62);
-}
-.btn-purple:disabled {
-  color: #fff;
-  background-color: #7568f6;
-  border-color: #8c68f6;
-}
-.btn-purple:not(:disabled):not(.disabled):active {
-  color: #fff;
-  background-color: rgba(128, 103, 238, 0.3);
-  border-color: #8c68f6;
-}
-.btn-purple:not(:disabled):not(.disabled).active {
-  color: #fff;
-  background-color: rgba(128, 103, 238, 0.3);
-  border-color: #8c68f6;
+  &:hover {
+    color: #fff;
+    background-color: rgba(113, 88, 226, 0.08);
+    border-color: #8c68f6;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgba(117, 104, 246, 0.62);
+  }
+  &:disabled {
+    color: #fff;
+    background-color: #7568f6;
+    border-color: #8c68f6;
+  }
+  &:not(:disabled) {
+    &:not(.disabled) {
+      &:active {
+        color: #fff;
+        background-color: rgba(128, 103, 238, 0.3);
+        border-color: #8c68f6;
+      }
+    }
+    &:not(.disabled).active {
+      color: #fff;
+      background-color: rgba(128, 103, 238, 0.3);
+      border-color: #8c68f6;
+    }
+  }
 }
 .btn-purple.focus {
   box-shadow: 0 0 0 0.1rem rgba(117, 104, 246, 0.62);
@@ -117,10 +121,12 @@ p {
   background-color: #7568f6;
   border-color: #8c68f6;
 }
-.show > .btn-purple.dropdown-toggle {
-  color: #fff;
-  background-color: rgba(128, 103, 238, 0.3);
-  border-color: #8c68f6;
+.show {
+  >.btn-purple.dropdown-toggle {
+    color: #fff;
+    background-color: rgba(128, 103, 238, 0.3);
+    border-color: #8c68f6;
+  }
 }
 .btn-purple-text {
   color: #7158E2;
@@ -192,10 +198,10 @@ p {
   text-align: center;
   color: white;
   border: 1px solid transparent;
-}
-.course-entry:hover {
-  border-color: #8c68f6;
-  border-radius: 10px;
+  &:hover {
+    border-color: #8c68f6;
+    border-radius: 10px;
+  }
 }
 .course-cover {
   position: absolute;
@@ -262,10 +268,10 @@ p {
   margin: 5px;
   display: flex;
   flex-direction: row;
-}
-.journal-entry:hover {
-  border-color: #8c68f6;
-  border-radius: 10px;
+  &:hover {
+    border-color: #8c68f6;
+    border-radius: 10px;
+  }
 }
 .journal-picture {
   margin-left: auto;
@@ -389,4 +395,3 @@ p {
   top: 45%;
   bottom: 12.46%;
 }
-/*# sourceMappingURL=main.css.map */
