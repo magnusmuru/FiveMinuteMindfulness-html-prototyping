@@ -290,6 +290,11 @@ p {
     flex-direction: row;
 }
 
+.journal-entry:hover {
+    border-color: #8c68f6;
+    border-radius: 10px;
+}
+
 .journal-picture {
     margin-left: auto;
     width: 70px;
