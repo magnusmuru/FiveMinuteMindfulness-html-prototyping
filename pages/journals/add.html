@@ -12,86 +12,66 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,600,700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap" rel="stylesheet"/>
-    <link href="../css/main.css" rel="stylesheet"/>
+    <link href="../../css/main.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Content</title>
+    <title>Journals</title>
 </head>
 <body>
 
 
 <div class="d-flex w-100 h-100">
     <div class="sidebar">
-        <div class="sidebar-entry" role="button" onclick="window.location.href='courses-home.html'">
+        <div class="sidebar-entry" role="button" onclick="window.location.href='../courses-home.html'">
             <i class="fa-solid fa-house sidebar-icon"></i>
             <span class="text-roboto">Home</span>
         </div>
-        <div class="sidebar-active">
+        <div class="sidebar-entry" role="button" onclick="window.location.href='../content-home.html'">
             <i class="fa-solid fa-bookmark sidebar-icon"></i>
             <span class="text-roboto">Content</span>
         </div>
-        <div class="sidebar-entry" role="button" onclick="window.location.href='journals-home.html'">
+        <div class="sidebar-active cursor-pointer" role="button" onclick="window.location.href='../journals-home.html'">
             <i class="fa-solid fa-book-open sidebar-icon"></i>
             <span class="text-roboto">Journals</span>
         </div>
     </div>
-
     <div class="w-100">
-        <div class="course-content-container">
-            <h3>Content</h3>
+        <div class="journal-content-container">
+            <h3>Create new journal</h3>
+            <div class="journal-items">
+                <h5>Title</h5>
+                <div class="journal-entry">
 
-            <div>
-                <h4>Audio</h4>
-                <div class="course-items">
-                    <div class="course-entry cursor-pointer"
-                         role="button"
-                         onclick="window.location.href='content/rain.html'">
-                        <img class="course-image" src="https://source.unsplash.com/ZxZQk7777R4"
-                             alt="Rainfall."/>
-                        <div class="course-cover light-purple-opaque"></div>
-                        <div class="course-title">Rain</div>
+                    <div class="journal-title">
+                        Looking towards the stars
                     </div>
+                </div>
 
-                    <div class="course-entry cursor-pointer"
-                         role="button"
-                         onclick="window.location.href='content/wind-and-leaves.html'">
-                        <img class="course-image" src="https://source.unsplash.com/3BlVILvh9hM"
-                             alt="Forests."/>
-                        <div class="course-cover light-turquoise-opaque"></div>
-                        <div class="course-title">Wind and leaves</div>
+                <h5>Your thoughts?</h5>
+                <div class="journal-entry">
+                    <div class="journal-title">
+                        Things I want to say
                     </div>
+                </div>
 
-                    <div class="course-entry">
-                        <img class="course-image" src="https://source.unsplash.com/5gn2soeAc40"
-                             alt="Vinyl player."/>
-                        <div class="course-cover blue-opaque"></div>
-                        <div class="course-title">Music</div>
-                        <div class="course-subtitle">Plug in <span class="darker-purple">your</span> own playlist</div>
+                <h5>Content</h5>
+                <div class="journal-content">
+                    <div class="journal-title">
+                        Are we just faking it till we make it? Maybe so. But at the
+                        same time I am hopeful for the future. The ability to make
+                        something greater is out there. To be more mindful of our
+                        actions and our wishes.
                     </div>
                 </div>
             </div>
 
             <div>
-                <h4>Video</h4>
-                <div class="course-items">
-                    <div class="course-entry">
-                        <img class="course-image" src="https://source.unsplash.com/UXR--t8CZ1U"
-                             alt="Meditation at mountains."/>
-                        <div class="course-cover dark-grey-opaque"></div>
-                        <div class="course-title">Guided meditation</div>
-                        <div class="course-subtitle">Find <span class="darker-purple">your</span> start</div>
-                    </div>
-
-                    <div class="course-entry cursor-pointer"
-                         role="button"
-                         onclick="window.location.href='content/fly-by.html'">
-                        <img class="course-image" src="https://source.unsplash.com/VBBGigIuaDY"
-                             alt="Bridge on water."/>
-                        <div class="course-cover light-blue-opaque-05"></div>
-                        <div class="course-title">Fly-by</div>
-                        <div class="course-subtitle">Everything looks calmer up high</div>
-                    </div>
-                </div>
+                <button type="button" class="btn btn-purple btn-bottom-align"
+                        onclick="window.location.href='journals-added.html'">
+                        <span class="btn-purple-text">
+                            Add
+                        </span>
+                </button>
             </div>
         </div>
         <div class="background-vectors">
@@ -99,14 +79,14 @@
                 <svg width="373" height="404" viewBox="0 0 373 404" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M153.053 0.376979C240.694 -4.55589 329.105 39.0318 358.88 124.69C391.516 218.577 367.622 330.935 286.737 384.967C215.038 432.863 129.175 378.397 63.4216 322.061C12.1478 278.131 -12.3413 210.821 6.12524 144.545C26.8215 70.2662 78.6344 4.56561 153.053 0.376979Z"
-                          fill="#F3BD53" fill-opacity="0.2"/>
+                          fill="#FDECFE"/>
                 </svg>
             </div>
             <div class="vector-bottom">
                 <svg width="324" height="362" viewBox="0 0 324 362" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M280.827 266.948C226.432 329.892 147.588 387.125 74.7034 349.661C0.315605 311.424 -10.2984 210.708 7.5184 126.461C22.1325 57.3589 80.8197 11.8601 148.277 1.76646C212.441 -7.83431 276.387 22.1023 306.21 81.7682C336.764 142.894 325.2 215.601 280.827 266.948Z"
-                          fill="#FDECFE"/>
+                          fill="#EDF5FE"/>
                 </svg>
             </div>
         </div>
