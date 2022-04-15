@@ -55,7 +55,7 @@ p {
     font-weight: 500;
 }
 
-.scroll {
+.scroll-y {
     overflow-y: scroll;
 }
 
@@ -172,7 +172,7 @@ p {
 }
 
 .course-content-container {
-    padding-top: 26px;
+    padding-top: 85px;
     margin: auto;
     width: 50%;
 }
@@ -190,6 +190,12 @@ p {
     position: relative;
     text-align: center;
     color: white;
+    border: 1px solid transparent;
+}
+
+.course-entry:hover {
+    border-color: #8c68f6;
+    border-radius: 10px;
 }
 
 .course-cover {
@@ -271,6 +277,10 @@ p {
 
 .grey-opaque {
     background: rgba(50, 58, 62, 0.5);
+}
+
+.dark-grey-opaque {
+    background: rgba(48, 48, 48, 0.5);
 }
 
 .light-yellow-opaque {
