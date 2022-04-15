@@ -1,10 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,600,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap" rel="stylesheet"/>
+    <link href="../../css/main.css" rel="stylesheet"/>
+    <script src="../../js/content.js" defer></script>
+
+    <title>Fly-by</title>
 </head>
 <body>
 
+<div class="d-flex w-100 h-100">
+    <div class="w-50">
+        <img class="page-image" src="https://source.unsplash.com/VBBGigIuaDY"
+             alt="Bridge on water."/>
+    </div>
+    <div class="w-50 scroll-y">
+        <div class="padded-container">
+            <div class="mb-5">
+                <h2>Fly-by</h2>
+                <p>
+                    Drones are amazing. They show us our world in a new light which makes us appreciate being here even
+                    more. Sometimes understanding the world we live in is the key to understanding what is happening
+                    within ourselves.
+                </p>
+
+                <p class="content-link" role="button" onclick="showEmbedContent('earth')">
+                    🗺️ Earth from above
+                </p>
+
+                <div id="earth" class="embed-responsive embed-responsive-16by9" style="display: none">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lM02vNMRRB0"
+                            title="Earth from above"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+
+                <p class="content-link" role="button" onclick="showEmbedContent('mountains')">
+                    🌄 Various Europe Mountains
+                </p>
+
+                <div id="mountains" class="embed-responsive embed-responsive-16by9" style="display: none">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aIXb-RPb358"
+                            title="Various Europe Mountains"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+
+                <p class="content-link" role="button" onclick="showEmbedContent('mountain-ranges')">
+                    🏔 Beautiful Czechia mountain ranges
+                </p>
+
+                <div id="mountain-ranges" class="embed-responsive embed-responsive-16by9" style="display: none">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/g3LHPzrKbtM"
+                            title="Beautiful Czechia mountain ranges"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" class="btn btn-purple" onclick="window.location.href='../content-home.html'">
+                        <span class="btn-purple-text">
+                            Back
+                        </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
