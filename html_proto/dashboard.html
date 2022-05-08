@@ -15,6 +15,7 @@
     <link href="css/main.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/echarts.js"></script>
+    <script src="js/roma.js"></script>
     <script src="js/papaparse.min.js"></script>
 
     <title>Style Guide</title>
@@ -61,36 +62,133 @@
                     console.log(listen);
                 </script>
             </div>
-            <div id="main" style="width: 600px;height:400px;">
-                <script type="text/javascript">
-                    // Initialize the echarts instance based on the prepared dom
-                    let myChart = echarts.init(document.getElementById('main'));
+            <div class="d-flex flex-row">
+                <div id="chart1" style="width: 400px;height:400px;">
+                    <script type="text/javascript">
+                        // Initialize the echarts instance based on the prepared dom
+                        let myChart1 = echarts.init(document.getElementById('chart1'), 'roma');
 
-                    // Specify the configuration items and data for the chart
-                    let option = {
-                        title: {
-                            text: 'ECharts Getting Started'
-                        },
-                        tooltip: {},
-                        legend: {
-                            data: ['sales']
-                        },
-                        xAxis: {
-                            data: ['Shirts', 'Cardigans', 'Chiffons', 'Pants', 'Heels', 'Socks']
-                        },
-                        yAxis: {},
-                        series: [
-                            {
-                                name: 'sales',
-                                type: 'bar',
-                                data: [5, 20, 36, 10, 10, 20]
-                            }
-                        ]
-                    };
+                        // Specify the configuration items and data for the chart
+                        let option1 = {
+                            title: {
+                                text: 'ECharts Getting Started'
+                            },
+                            tooltip: {},
+                            legend: {
+                                data: ['Sales']
+                            },
+                            xAxis: {
+                                data: ['Shirts', 'Cardigans', 'Chiffons', 'Pants', 'Heels', 'Socks']
+                            },
+                            yAxis: {},
+                            series: [
+                                {
+                                    name: 'Sales',
+                                    type: 'bar',
+                                    data: [5, 20, 36, 10, 10, 20]
+                                }
+                            ]
+                        };
 
-                    // Display the chart using the configuration items and data just specified.
-                    myChart.setOption(option);
-                </script>
+                        // Display the chart using the configuration items and data just specified.
+                        myChart1.setOption(option1);
+                    </script>
+                </div>
+                <div id="chart2" style="width: 600px;height:400px;">
+                    <script type="text/javascript">
+                        // Initialize the echarts instance based on the prepared dom
+                        let newChart = echarts.init(document.getElementById('chart2'), 'roma');
+
+                        // Specify the configuration items and data for the chart
+                        let option2 = {
+                            title: {
+                                text: 'Echarts 2'
+                            },
+                            tooltip: {},
+                            legend: {
+                                data: ['sales']
+                            },
+                            xAxis: {
+                                data: ['Shirts', 'Cardigans', 'Chiffons', 'Pants', 'Heels', 'Socks']
+                            },
+                            yAxis: {},
+                            series: [
+                                {
+                                    name: 'sales',
+                                    type: 'bar',
+                                    data: [5, 25, 33, 10, 10, 20]
+                                }
+                            ]
+                        };
+
+                        // Display the chart using the configuration items and data just specified.
+                        newChart.setOption(option2);
+                    </script>
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <div id="chart3" style="width: 600px;height:400px;">
+                    <script type="text/javascript">
+                        // Initialize the echarts instance based on the prepared dom
+                        let myChart3 = echarts.init(document.getElementById('chart3'), 'roma');
+
+                        // Specify the configuration items and data for the chart
+                        let option3 = {
+                            title: {
+                                text: 'ECharts Getting Started'
+                            },
+                            tooltip: {},
+                            legend: {
+                                data: ['sales']
+                            },
+                            xAxis: {
+                                data: ['Shirts', 'Cardigans', 'Chiffons', 'Pants', 'Heels', 'Socks']
+                            },
+                            yAxis: {},
+                            series: [
+                                {
+                                    name: 'sales',
+                                    type: 'bar',
+                                    data: [5, 20, 36, 10, 10, 20]
+                                }
+                            ]
+                        };
+
+                        // Display the chart using the configuration items and data just specified.
+                        myChart3.setOption(option3);
+                    </script>
+                </div>
+                <div id="chart4" style="width: 600px;height:400px;">
+                    <script type="text/javascript">
+                        // Initialize the echarts instance based on the prepared dom
+                        let newChart4 = echarts.init(document.getElementById('chart4'), 'roma');
+
+                        // Specify the configuration items and data for the chart
+                        let option4 = {
+                            title: {
+                                text: 'Echarts 2'
+                            },
+                            tooltip: {},
+                            legend: {
+                                data: ['sales']
+                            },
+                            xAxis: {
+                                data: ['Shirts', 'Cardigans', 'Chiffons', 'Pants', 'Heels', 'Socks']
+                            },
+                            yAxis: {},
+                            series: [
+                                {
+                                    name: 'sales',
+                                    type: 'bar',
+                                    data: [5, 25, 33, 10, 10, 20]
+                                }
+                            ]
+                        };
+
+                        // Display the chart using the configuration items and data just specified.
+                        newChart4.setOption(option4);
+                    </script>
+                </div>
             </div>
         </div>
         <div class="background-vectors">
