@@ -53,17 +53,33 @@
                 <p class="content-link"
                    role="button"
                    onclick="window.location.href='https://www.kaggle.com/datasets/ydalat/lifestyle-and-wellbeing-data'">
-                    📁 Dataset source
+                    📁 Dataset source: Lifestyle_and_Wellbeing_Data
                 </p>
             </div>
 
             <div class="d-flex flex-row justify-content-between">
-                <div id="stressChart" style="width: 100%;height:400px;"></div>
-                <div id="incomeChart" style="width: 100%;height:400px;"></div>
+                <div style="width: 100%">
+                    <h6>User daily stress level</h6>
+                    <p class="p-small">Users rate if the level of stress they experience daily is low or high</p>
+                    <div id="stressChart" style="width: 100%;height:350px;"></div>
+                </div>
+                <div style="width: 100%">
+                    <h6>User income sufficiency</h6>
+                    <p class="p-small">Users rate on whether the income they receive is sufficient or insufficient</p>
+                    <div id="incomeChart" style="width: 100%;height:350px;"></div>
+                </div>
             </div>
-            <div class="d-flex flex-row">
-                <div id="weeklyToDoChart" style="width: 100%;height:400px;"></div>
-                <div id="chart4" style="width: 100%;height:400px;"></div>
+            <div class="d-flex flex-row mt-15-neg">
+                <div style="width: 100%">
+                    <h6>User weekly ToDo list completion</h6>
+                    <p class="p-small">Users rate on a scale from 0 to 10 how well they completed their weekly tasks</p>
+                    <div id="weeklyToDoChart" style="width: 100%;height:350px;"></div>
+                </div>
+                <div style="width: 100%">
+                    <h6>User sleep hour improvement after using app</h6>
+                    <p class="p-small">This line graph shows how users' sleep hours have improved after using the Mindfulness application</p>
+                    <div id="sleepChart" style="width: 100%;height:350px;"></div>
+                </div>
             </div>
         </div>
         <div class="background-vectors">
@@ -168,9 +184,6 @@
         let stressChart = echarts.init(document.getElementById('stressChart'), 'roma');
 
         let stressChartOptions = {
-            title: {
-                text: 'User daily stress level'
-            },
             tooltip: {},
             legend: {
                 top: 20,
@@ -199,9 +212,6 @@
         let incomeChart = echarts.init(document.getElementById('incomeChart'), 'roma');
 
         let incomeChartOptions = {
-            title: {
-                text: 'User income sufficiency'
-            },
             tooltip: {},
             legend: {
                 top: 20,
@@ -230,9 +240,6 @@
         let weeklyToDoChart = echarts.init(document.getElementById('weeklyToDoChart'), 'roma');
 
         let weeklyToDoOptions = {
-            title: {
-                text: 'User weekly ToDo list completion'
-            },
             tooltip: {},
             legend: {
                 top: 20,
@@ -258,12 +265,9 @@
     }
 
     function initSleepChart(data, newData) {
-        let sleepChart = echarts.init(document.getElementById('chart4'), 'roma');
+        let sleepChart = echarts.init(document.getElementById('sleepChart'), 'roma');
 
         let sleepOption = {
-            title: {
-                text: 'User sleep hour improvement after using app'
-            },
             tooltip: {},
             legend: {
                 top: 20,

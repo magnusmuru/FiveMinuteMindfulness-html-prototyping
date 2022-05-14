@@ -49,11 +49,31 @@ h5 {
   font-feature-settings: 'pnum' on, 'lnum' on;
   color: #767583;
 }
+h6 {
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 0;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
 p {
   font-size: 18px;
   font-family: Inter, sans-serif;
   text-align: justify;
   font-weight: 500;
+}
+.p-small {
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  text-align: justify;
+  font-weight: 500;
+  margin: 0;
+}
+.mt-15-neg {
+  margin-top: -5px;
 }
 .scroll-y {
   overflow-y: scroll;
